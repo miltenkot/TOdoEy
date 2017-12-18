@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="i4t-DW-DDt" id="1KA-6V-dEz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="LUe-nO-E4z"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="LUe-nO-E4z">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dKE-2F-rTj">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="i4t-DW-DDt" id="Lzi-iu-tNe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTableView" destination="U2W-K7-zdq" id="XZL-jG-akh"/>
                     </connections>
@@ -51,10 +58,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
